@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TimeTable">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            >
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Select : "
+             android:textStyle="bold"
+             android:fontFamily="@font/googlesans"
+             />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deptsem"
+            android:layout_marginLeft="4dp"
+            android:entries="@array/Branchyear"
+            android:spinnerMode="dialog"
+            />
+
+        </LinearLayout>
+        <!--<android.support.design.widget.TabLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:id="@+id/tab2"-->
+            <!--android:background="@color/cardview_dark_background"-->
+            <!--app:tabSelectedTextColor="#FFFFFF"-->
+            <!--app:tabTextColor="#FFFFFF"-->
+            <!--/>-->
+
+        <com.ogaclejapan.smarttablayout.SmartTabLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:id="@+id/tab1"
+            android:layout_height="60dp"
+            android:clipToPadding="false"
+            android:background="@color/cardview_dark_background"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            app:stl_defaultTabTextColor="#ffffff"
+            app:stl_defaultTabTextSize="14sp"
+            app:stl_defaultTabTextHorizontalPadding="18dp"
+            app:stl_indicatorAlwaysInCenter="true"
+            app:stl_indicatorColor="#F35B5B"
+            app:stl_indicatorCornerRadius="18dp"
+            app:stl_indicatorGravity="center"
+            app:stl_indicatorInterpolation="smart"
+            app:stl_indicatorThickness="36dp"
+            app:stl_overlineColor="#4D000000"
+            app:stl_overlineThickness="0dp"
+            app:stl_underlineThickness="0dp"
+            app:stl_dividerThickness="0dp"
+            tools:ignore="MissingConstraints" />
+
+        <android.support.v4.view.ViewPager
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/view"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

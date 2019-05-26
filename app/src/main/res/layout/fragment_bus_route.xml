@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.BusRoute"
+    android:id="@+id/busroute"
+    android:background="@android:color/darker_gray">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarThumbVertical="@color/scrollcolor">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:divider="?attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:background="@color/materiallightblue"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/materiablue"
+                android:fontFamily="@font/googlesans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:textColor="@color/materiablue"
+                android:text="Time"
+                android:fontFamily="@font/googlesans"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:divider="?attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:background="@color/materiallightblue"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Date"
+                android:fontFamily="@font/googlesans"
+                android:textSize="20sp"
+                android:id="@+id/datebus" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="Time"
+                android:fontFamily="@font/googlesans"
+                android:textSize="20sp"
+                android:id="@+id/timebus" />
+        </LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginRight="8dp"
+    android:id="@+id/recyclerView2">
+
+</android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>
